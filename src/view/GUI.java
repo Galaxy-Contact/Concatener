@@ -94,7 +94,15 @@ public class GUI extends JFrame {
             model.setListColumns(new ArrayList<>(Arrays.asList(tfColumns.getText().split("((?![a-zA-Z]).)+"))));
             model.setExcelFile(new File(tfExcel.getText()));
 
-            new ConcatenationTask(model).execute();
+            new ConcatenationTask(this).execute();
         });
+    }
+
+    public ExcelModel getModel() {
+        return model;
+    }
+
+    public void setModel(ExcelModel model) {
+        this.model = model;
     }
 }

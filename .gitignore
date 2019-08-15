@@ -24,3 +24,7 @@ hs_err_pid*
 
 # IDE
 .idea/
+
+# Excel stuff
+*.xls*
+
